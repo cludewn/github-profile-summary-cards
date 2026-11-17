@@ -37,7 +37,11 @@ const THEME_TABLE = [
     'tokyonight',
     'vue',
     'zenburn',
-    'transparent'
+    'transparent',
+    'cwn_dark',
+    'cwn_dark_border',
+    'cwn_light',
+    'cwn_light_border'
 ];
 for (const theme of THEME_TABLE) {
     write(`themes/${theme}.svg`, render('profile-details', theme));
@@ -52,7 +56,7 @@ const HERO: [string, string][] = [
     ['productive-time', '4-productive-time']
 ];
 for (const [card, file] of HERO) {
-    write(`hero/${file}.svg`, render(card, 'solarized', 'load'));
+    write(`hero/${file}.svg`, render(card, 'cwn_dark_border', 'load'));
 }
 
 // 3. Animation showcase — one representative card per preset (baked-in animation).
